@@ -269,7 +269,7 @@ class Sequencer(object):
             seqev.data.control.value = event.pitch
         ## Unknown
         else:
-            print "Warning :: Unknown event type: %s" % event
+            print( "Warning :: Unknown event type: %s" % event)
             return None
             
         err = S.snd_seq_event_output(self.client, seqev)
